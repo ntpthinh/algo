@@ -9,8 +9,9 @@ class Solution {
          * current element. We might think of this as: sum1 = n*k + r1, sum2 = m*k + r2,
          * if r1 == r2, sum2 - sum1 = (m-n)*k => there is a subarray that sum is
          * divisible by k. To count total number of subarray, we need to keep the
-         * frequency of that remainder prior to current element If remainder < 0,
-         * remainder += k
+         * frequency of that remainder prior to current element.
+         * 
+         * If remainder < 0, remainder += k
          */
         Map<Integer, Integer> map = new HashMap();
         map.put(0, 1);
